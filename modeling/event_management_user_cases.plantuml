@@ -1,0 +1,19 @@
+@startuml event management
+left to right direction
+actor Host
+actor User
+
+usecase "Crear evento" as UC_CreateEvent
+usecase "Editar evento" as UC_EditEvent
+usecase "Cancelar evento" as UC_CancelEvent
+usecase "Ver eventos" as UC_ViewEvents
+usecase "Unirse a evento" as UC_JoinEvent
+usecase "Ver detalles de evento" as UC_ViewEventDetails
+
+Host --> UC_CreateEvent
+Host --> UC_EditEvent
+Host --> UC_CancelEvent
+User --> UC_ViewEvents
+User --> UC_JoinEvent
+User --> UC_ViewEventDetails
+@enduml

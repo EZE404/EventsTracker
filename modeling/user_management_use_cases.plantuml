@@ -1,0 +1,17 @@
+@startuml user management
+left to right direction
+actor User
+actor Admin
+
+usecase "Registrar usuario" as UC_Register
+usecase "Iniciar sesión" as UC_Login
+usecase "Ver perfil" as UC_ViewProfile
+usecase "Editar perfil" as UC_EditProfile
+usecase "Asignar rol a usuario" as UC_AssignRole
+
+User --> UC_Register
+User --> UC_Login
+User --> UC_ViewProfile
+User --> UC_EditProfile
+Admin --> UC_AssignRole
+@enduml

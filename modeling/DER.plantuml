@@ -1,0 +1,71 @@
+@startuml event tracker
+entity "User" as User {
+  + ID : int
+  --
+  FirstName : nvarchar(70)
+  LastName : nvarchar(70)
+  Email : nvarchar(140)
+  Bio : nvarchar(MAX)
+}
+
+entity "Role" as Role {
+  + ID : int
+  --
+  Name : nvarchar(50)
+  Description : nvarchar(MAX)
+}
+
+entity "UserRole" as UserRole {
+  + UserID : int
+  + RoleID : int
+  --
+  // Table to assign roles to users
+}
+
+entity "Event" as Event {
+  + ID : int
+  --
+  Name : nvarchar(70)
+  Description : nvarchar(MAX)
+  Location : nvarchar(70)
+  StartDateTime : datetime
+  EndDateTime : datetime
+  Capacity : int
+  CreatorID : int
+  StatusID : int
+}
+
+entity "EventStatus" as EventStatus {
+  + ID : int
+  --
+  Name : nvarchar(20)  // Draft, Published, Concluded, Cancelled
+}
+
+entity "EventInvitation" as EventInvitation {
+  + ID : int
+  --
+  EventID : int
+  UserID : int
+  ResponseStatus : varchar(20)  // Accepted, Rejected, Maybe
+  SentDate : datetime
+  ResponseDate : datetime
+}
+
+entity "EventPost" as EventPost {
+  + ID : int
+  --
+  EventID : int
+  UserID : int
+  Text : nvarchar(MAX)
+  CreationDate : datetime
+}
+
+User ||--o{ UserRole : ""
+Role ||--o{ UserRole : ""
+User ||--o{ Event : "creates"
+User ||--o{ EventInvitation : "receives"
+Event ||--o{ EventInvitation : "has"
+Event ||--o{ EventPost : "has"
+User ||--o{ EventPost : "posts"
+EventStatus ||--o{ Event : "defines status"
+@enduml
