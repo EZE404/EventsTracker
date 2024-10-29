@@ -1,29 +1,31 @@
 # Aplicación de Gestión de Eventos Sociales
----
+
 ## Presentación
+
 #### Equipo de Desarrollo:
 *    Albornoz Franco Ezequiel
 *    Paulo Nicolás Cabrera
+
 ## Tabla de contenido
-    1. Introducción
-    2. Justificación
-    3. Objetivo general del proyecto
-    4. Objetivos específicos del proyecto
-    5. Objetivo general del sistema
-    6. Límite
-    7. Alcance
-    8. No Contemplado
-    9. Tecnologías
-    10. Competencia
-    11. Listado de Requerimientos funcionales
-    12. Listado de Requerimientos no funcionales
-    13. Desarrollo del Prototipo
-        Análisis y Diseño
-        Diagrama de Casos de Uso más relevantes
-        Diagrama de Clases
-        Interfaz Gráfica
-    14. Bibliografía
-    15. Anexo I
+1. Introducción
+2. Justificación
+3. Objetivo general del proyecto
+4. Objetivos específicos del proyecto
+5. Objetivo general del sistema
+6. Límite
+7. Alcance
+8. No Contemplado
+9. Tecnologías
+10. Competencia
+11. Listado de Requerimientos funcionales
+12. Listado de Requerimientos no funcionales
+13. Desarrollo del Prototipo
+    Análisis y Diseño
+    Diagrama de Casos de Uso más relevantes
+    Diagrama de Clases
+    Interfaz Gráfica
+14. Bibliografía
+15. Anexo I
 
 ## 1. Introducción
 La aplicación de gestión de eventos sociales es una herramienta diseñada para ciudadanos y turistas que desean tener acceso centralizado a los eventos sociales de una ciudad o región. A través de esta app, los usuarios podrán registrarse, explorar eventos, recibir invitaciones y unirse a aquellos eventos de su interés. Además, permitirá a organizadores (hosts) crear, gestionar y compartir eventos con una audiencia específica, proporcionando una plataforma interactiva y fácil de usar para la gestión de actividades sociales.
@@ -72,7 +74,6 @@ La aplicación está pensada para funcionar principalmente en un entorno local o
 Existen aplicaciones como Eventbrite o Meetup que ofrecen plataformas globales para la gestión de eventos. Sin embargo, la propuesta de esta app se centra en un enfoque local, permitiendo a los usuarios descubrir y participar en eventos de una ciudad o región específica, con funcionalidades de invitación y administración simplificadas. Este enfoque específico permite una mayor adaptación a las necesidades de un contexto local o turístico.
 
 ## 11. Listado de Requerimientos Funcionales
-
 1. **RF-1**: El sistema debe permitir el registro de usuarios con roles específicos (usuario, organizador, administrador).
 2. **RF-2**: El usuario debe poder iniciar sesión y cerrar sesión de forma segura.
 3. **RF-3**: Los usuarios deben poder ver la lista de eventos disponibles y unirse a eventos públicos o privados mediante invitación.
@@ -85,7 +86,6 @@ Existen aplicaciones como Eventbrite o Meetup que ofrecen plataformas globales p
 10. **RF-10**: Los administradores deben poder asignar roles a los usuarios.
 
 ## 12. Listado de Requerimientos No Funcionales
-
 1. **RNF-1**: La aplicación debe tener una interfaz de usuario intuitiva y responsiva, adaptada para dispositivos Android.
 2. **RNF-2**: La API debe utilizar tokens JWT para garantizar la autenticación y autorización segura de los usuarios.
 3. **RNF-3**: La aplicación debe responder rápidamente a las acciones del usuario, con un tiempo de carga de eventos inferior a 2 segundos en condiciones de red normales.
@@ -98,7 +98,6 @@ Existen aplicaciones como Eventbrite o Meetup que ofrecen plataformas globales p
 ## 13. Desarrollo del Prototipo
 
 >### Análisis y Diseño
-
 El proceso de análisis y diseño se centró en crear una arquitectura modular y escalable para una aplicación de gestión de eventos sociales que fuera intuitiva tanto para los usuarios como para los organizadores. Este enfoque incluye la definición de los requisitos funcionales, la selección de una arquitectura de software adecuada y el diseño de una interfaz de usuario simplificada y eficiente.
 
 #### Arquitectura del Sistema
