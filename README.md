@@ -20,10 +20,10 @@
 11. Listado de Requerimientos funcionales
 12. Listado de Requerimientos no funcionales
 13. Desarrollo del Prototipo
-a. Análisis y Diseño
-b. Diagrama de Casos de Uso más relevantes
-c. Diagrama de Clases
-d. Interfaz Gráfica
+13.1 Análisis y Diseño
+13.2 Diagrama de Casos de Uso más relevantes
+13.3 Diagrama de Clases
+13.4 Interfaz Gráfica
 14. Bibliografía
 15. Anexo I
 
@@ -97,7 +97,7 @@ Existen aplicaciones como Eventbrite o Meetup que ofrecen plataformas globales p
 
 ## 13. Desarrollo del Prototipo
 
->### Análisis y Diseño
+### 13.1 - Análisis y Diseño
 El proceso de análisis y diseño se centró en crear una arquitectura modular y escalable para una aplicación de gestión de eventos sociales que fuera intuitiva tanto para los usuarios como para los organizadores. Este enfoque incluye la definición de los requisitos funcionales, la selección de una arquitectura de software adecuada y el diseño de una interfaz de usuario simplificada y eficiente.
 
 #### Arquitectura del Sistema
@@ -118,7 +118,7 @@ Basándonos en los casos de uso y el modelo entidad-relación, se definieron los
 - **Componente de Invitaciones**: Facilita la creación, envío y respuesta a las invitaciones para eventos.
 - **Componente de Publicaciones**: Gestiona las publicaciones dentro de cada evento, permitiendo a los usuarios interactuar en el contexto de un evento específico.
 ---
->### Diagrama de Casos de Uso más relevantes
+### 13.2 - Diagrama de Casos de Uso más relevantes
 
 Vamos a dividir los casos de uso en tres grupos para claridad:
 
@@ -132,7 +132,7 @@ Vamos a dividir los casos de uso en tres grupos para claridad:
     ##### 3. Casos de Uso: Invitaciones y Publicaciones
     ![Invitaciones y Publicaciones](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/invitations_posts_management_use_cases/invitations%20and%20posts%20management.svg)
 ---
->### Diagrama de Clases
+### 13.3 Diagrama de Clases
 ```mermaid
 classDiagram
     class User {
@@ -205,7 +205,7 @@ classDiagram
 
 ```
 ---
->### Interfaz Gráfica
+### 13.4 - Interfaz Gráfica
 Aún no se han generado mockups para la interfaz gráfica, el diseño de la UI seguirá estos principios básicos:
 - **Pantalla de Inicio**: Opción para iniciar sesión o registrarse.
 - **Pantalla Principal**: Listado de eventos con opciones de filtrado y búsqueda.
