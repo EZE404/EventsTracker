@@ -20,10 +20,10 @@
 11. Listado de Requerimientos funcionales
 12. Listado de Requerimientos no funcionales
 13. Desarrollo del Prototipo
-    Análisis y Diseño
-    Diagrama de Casos de Uso más relevantes
-    Diagrama de Clases
-    Interfaz Gráfica
+a. Análisis y Diseño
+b. Diagrama de Casos de Uso más relevantes
+c. Diagrama de Clases
+d. Interfaz Gráfica
 14. Bibliografía
 15. Anexo I
 
