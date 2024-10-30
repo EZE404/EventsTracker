@@ -25,23 +25,13 @@ entity "Event" as Event {
   Location : nvarchar(200)
 }
 
-entity "Ticket" as Ticket {
-  + ID : int
-  --
-  EventID : int
-  UserID : int
-  PurchaseDate : datetime
-  Price : decimal(10,2)
-  Status : enum(TicketStatus)  // Active, Cancelled, Used
-}
-
 entity "EventInvitation" as EventInvitation {
   + ID : int
   --
   EventID : int
   UserID : int
   CreatorID : int  // ID del usuario que crea la invitación
-  ResponseStatus : varchar(20)  // Accepted, Rejected, Maybe
+  ResponseStatus : varchar(20)  // Aceptada, Rechazada, Tal vez
   SentDate : datetime
   ResponseDate : datetime
 }
@@ -58,9 +48,7 @@ entity "EventPost" as EventPost {
 User ||--o{ Event : "creates"
 User ||--o{ EventInvitation : "receives"
 User ||--o{ EventInvitation : "creates"
-User ||--o{ Ticket : "buys"
 Event ||--o{ EventInvitation : "has"
 Event ||--o{ EventPost : "has"
-Event ||--o{ Ticket : "sells"
 User ||--o{ EventPost : "posts"
 @enduml

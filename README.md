@@ -20,10 +20,10 @@
 11. Listado de Requerimientos funcionales
 12. Listado de Requerimientos no funcionales
 13. Desarrollo del Prototipo
-13.1 Análisis y Diseño
-13.2 Diagrama de Casos de Uso más relevantes
-13.3 Diagrama de Clases
-13.4 Interfaz Gráfica
+    13.1 Análisis y Diseño
+    13.2 Diagrama de Casos de Uso más relevantes
+    13.3 Diagrama de Clases
+    13.4 Interfaz Gráfica
 14. Bibliografía
 15. Anexo I
 
@@ -140,6 +140,8 @@ classDiagram
         +String FirstName
         +String LastName
         +String Email
+        +String Pass
+        +String AvatarUrl
         +String Bio
         +createEvent() Event
         +receiveInvitation(EventInvitation invitation)
@@ -173,14 +175,14 @@ classDiagram
 
     class EventStatus {
         +int ID
-        +String Name // Draft, Published, Concluded, Cancelled
+        +String Name [Borrador, Publicado, Finalizado, Cancelado]
     }
 
     class EventInvitation {
         +int ID
         +int EventID
         +int UserID
-        +String ResponseStatus // Accepted, Rejected, Maybe
+        +String ResponseStatus [Aceptado, Rechazado, Tal vez]
         +Date SentDate
         +Date ResponseDate
         +respond(String responseStatus)
@@ -194,14 +196,14 @@ classDiagram
         +Date CreationDate
     }
 
-    User "1" --> "*" UserRole : has role
-    Role "1" --> "*" UserRole : assigned to
-    User "1" --> "*" Event : creates
-    User "1" --> "*" EventInvitation : receives
-    Event "1" --> "*" EventInvitation : has
-    Event "1" --> "*" EventPost : has
-    User "1" --> "*" EventPost : posts
-    EventStatus "1" --> "*" Event : defines status
+    User "1" --> "*" UserRole : tiene un rol
+    Role "1" --> "*" UserRole : asignado a
+    User "1" --> "*" Event : crea eventos
+    User "1" --> "*" EventInvitation : recibe
+    Event "1" --> "*" EventInvitation : tiene
+    Event "1" --> "*" EventPost : tiene
+    User "1" --> "*" EventPost : comenta
+    EventStatus "1" --> "*" Event : define estado
 
 ```
 ---
