@@ -2,7 +2,7 @@
 left to right direction
 actor User
 actor Admin
-
+Admin -|> User
 usecase "Registrar usuario" as UC_Register
 usecase "Iniciar sesión" as UC_Login
 usecase "Ver perfil" as UC_ViewProfile

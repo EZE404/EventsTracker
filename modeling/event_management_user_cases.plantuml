@@ -2,7 +2,7 @@
 left to right direction
 actor Host
 actor User
-
+Host -|> User
 usecase "Crear evento" as UC_CreateEvent
 usecase "Editar evento" as UC_EditEvent
 usecase "Cancelar evento" as UC_CancelEvent

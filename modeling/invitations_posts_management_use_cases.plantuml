@@ -2,7 +2,7 @@
 left to right direction
 actor User
 actor Host
-
+Host -|> User
 usecase "Enviar invitación" as UC_SendInvitation
 usecase "Responder a invitación" as UC_RespondInvitation
 usecase "Ver invitaciones" as UC_ViewInvitations
