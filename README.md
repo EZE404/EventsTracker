@@ -142,37 +142,49 @@ El diseño de la UI seguirá estos principios básicos:
 - **Publicaciones en Evento**: Espacio para que los asistentes puedan ver y crear publicaciones en el contexto de un evento.
 
 > Login
+>
 > ![login](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Log_in.png)
 
 > Menu
+>
 > ![menu](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Menu.png)
 
 > Perfil
+>
 > ![profile](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Perfil.png)
 
 > Registrarse
+>
 > ![register](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Registro.png)
 
 > Olvidé mi contraseña
+>
 > ![forgot-pass](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Olvide_contrase%C3%B1a.png)
 
 > Validación recuperación de acceso
+>
 > ![forgot-pass-code](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Validar_codigo_contrase%C3%B1a.png)
 
 > Eventos
+>
 > ![events-list](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Listado_evento.png)
 
 > Eventos Mapa
+>
 > ![events-map](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Mapa_list.png)
 
 > Agenda
+>
 > ![calendar](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Agenda.png)
 
 > Nuevo evento
+>
 > ![new-event](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Evento_crud.png)
 
 > Eliminar evento
+>
 > ![delete-event](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/eliminar_evento.png)
 
 > Notificaciones Push
+>
 > ![notifications](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Notificaciones.png)
