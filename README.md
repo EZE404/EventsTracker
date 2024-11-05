@@ -20,18 +20,18 @@
 11. Listado de Requerimientos funcionales
 12. Listado de Requerimientos no funcionales
 13. Desarrollo del Prototipo
-  13.1 Análisis y Diseño
-  13.2 Diagrama de Casos de Uso más relevantes
-  13.3 Diagrama de Clases
-  13.4 Interfaz Gráfica
+    1. Análisis y Diseño
+    2. Diagrama de Casos de Uso más relevantes
+    3. Diagrama de Clases
+    4. Interfaz Gráfica
 14. Bibliografía
 15. Anexo I
 
 ## 1. Introducción
-La aplicación de gestión de eventos sociales es una herramienta diseñada para ciudadanos y turistas que desean tener acceso centralizado a los eventos sociales de una ciudad o región. A través de esta app, los usuarios podrán registrarse, explorar eventos, recibir invitaciones y unirse a aquellos eventos de su interés. Además, permitirá a organizadores (hosts) crear, gestionar y compartir eventos con una audiencia específica, proporcionando una plataforma interactiva y fácil de usar para la gestión de actividades sociales.
+La aplicación de gestión de eventos sociales es una herramienta diseñada para ciudadanos que desean tener acceso centralizado a los eventos sociales de una ciudad o región. A través de esta app, los usuarios podrán registrarse, explorar eventos, recibir invitaciones y unirse a aquellos eventos de su interés. Además, permitirá a organizadores (hosts) crear, gestionar y compartir eventos con una audiencia específica, proporcionando una plataforma interactiva y fácil de usar para la gestión de actividades sociales.
 
 ## 2. Justificación
-En muchas ciudades y destinos turísticos, la información sobre eventos suele estar dispersa en múltiples plataformas, lo que dificulta su acceso y seguimiento. Esta aplicación busca resolver este problema al centralizar toda la información relevante en un solo lugar, ofreciendo una experiencia intuitiva tanto para los organizadores de eventos como para los asistentes. La app beneficiará a los usuarios al permitirles descubrir fácilmente actividades locales, y a los organizadores al ofrecerles un medio efectivo para promocionar sus eventos y gestionar la participación.
+En nuetra ciudad (San Luis), la información sobre eventos suele estar dispersa en múltiples plataformas, lo que dificulta su acceso y seguimiento. Esta aplicación busca resolver este problema al centralizar toda la información relevante en un solo lugar, ofreciendo una experiencia intuitiva tanto para los organizadores de eventos como para los asistentes. La app beneficiará a los usuarios al permitirles descubrir fácilmente actividades locales, y a los organizadores al ofrecerles un medio efectivo para promocionar sus eventos y gestionar la participación.
 
 ## 3. Objetivo General del Proyecto
 Desarrollar una aplicación móvil que permita a usuarios y organizadores de eventos gestionar actividades sociales en una plataforma centralizada, ofreciendo funcionalidades que faciliten la creación, visualización, administración y participación en eventos.
@@ -92,8 +92,6 @@ Existen aplicaciones como Eventbrite o Meetup que ofrecen plataformas globales p
 4. **RNF-4**: La aplicación debe ser escalable, permitiendo la futura expansión a nuevos tipos de eventos y funcionalidades sin reestructuración significativa.
 5. **RNF-5**: Los datos personales de los usuarios, incluidas las contraseñas, deben almacenarse de manera segura y cumplir con los estándares de protección de datos.
 6. **RNF-6**: La aplicación debe funcionar en dispositivos Android con versiones desde Android 8 (Oreo) en adelante.
-7. **RNF-7**: La documentación del código y las interfaces de la API deben estar actualizadas y disponibles para facilitar el mantenimiento.
-8. **RNF-8**: El backend debe tener una tasa de disponibilidad de al menos el 99.5% para garantizar el acceso continuo a los servicios.
 
 ## 13. Desarrollo del Prototipo
 
@@ -136,9 +134,22 @@ Vamos a dividir los casos de uso en tres grupos para claridad:
 ![DER](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/DER%20copy/event%20tracker.svg)
 ---
 ### 13.4 - Interfaz Gráfica
-Aún no se han generado mockups para la interfaz gráfica, el diseño de la UI seguirá estos principios básicos:
+El diseño de la UI seguirá estos principios básicos:
 - **Pantalla de Inicio**: Opción para iniciar sesión o registrarse.
 - **Pantalla Principal**: Listado de eventos con opciones de filtrado y búsqueda.
 - **Detalles del Evento**: Visualización de la información completa del evento, con la opción de registrarse o responder a invitaciones.
 - **Perfil de Usuario**: Visualización y edición de información del perfil.
 - **Publicaciones en Evento**: Espacio para que los asistentes puedan ver y crear publicaciones en el contexto de un evento.
+
+![login](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Log_in.png)
+![menu](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Menu.png)
+![profile](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Perfil.png)
+![register](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Registro.png)
+![forgot-pass](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Olvide_contrase%C3%B1a.png)
+![forgot-pass-code](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Validar_codigo_contrase%C3%B1a.png)
+![events-list](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Listado_evento.png)
+![events-map](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Mapa_list.png)
+![calendar](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Agenda.png)
+![new-event](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Evento_crud.png)
+![delete-event](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/eliminar_evento.png)
+![notifications](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/Design_application_Mobile/Notificaciones.png)
