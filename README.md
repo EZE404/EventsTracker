@@ -116,39 +116,45 @@ Basándonos en los casos de uso y el modelo entidad-relación, se definieron los
 - **Componente de Invitaciones**: Facilita la creación, envío y respuesta a las invitaciones para eventos.
 - **Componente de Publicaciones**: Gestiona las publicaciones dentro de cada evento, permitiendo a los usuarios interactuar en el contexto de un evento específico.
 ---
-### 13.2 - Diagrama de Casos de Uso más relevantes
+### 13.2 - Diagrama de Casos de Uso Más Relevantes
 
-Vamos a dividir los casos de uso en tres grupos para claridad:
+Vamos a dividir los casos de uso en tres grupos para mayor claridad:
 
-**1. Casos de uso relacionados con la gestión de usuarios.**
-**2. Casos de uso relacionados con la gestión de eventos.**
-**3. Casos de uso relacionados con las invitaciones y publicaciones.**
+1. **Casos de uso relacionados con la gestión de usuarios**
+2. **Casos de uso relacionados con la gestión de eventos**
+3. **Casos de uso relacionados con las invitaciones y publicaciones**
 
-  ##### 1. Casos de Uso: Gestión de Usuarios
-  ![Gestión de Usuarios](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/user_management_use_cases/user%20management.svg)
-  ##### Descripción:
-  - **Registrar usuario**: Un usuario puede registrarse en la plataforma.
-  - **Iniciar sesión**: Un usuario registrado puede iniciar sesión.
-  - **Ver perfil**: Permite a los usuarios visualizar su perfil.
-  - **Editar perfil**: Permite a los usuarios actualizar sus datos personales.
-  - **Asignar rol a usuario** (solo para **Admin**): Un administrador puede asignar roles específicos (Admin, Host) a los usuarios.
-  ##### 2. Casos de Uso: Gestión de Eventos
-  ![Gestión de Eventos](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/event_management_user_cases/event%20management.svg)
-  ##### Descripción:
-  - **Crear evento** (solo para **Host**): Permite a los usuarios con rol de Host crear un nuevo evento.
-  - **Editar evento** (solo para **Host**): Un Host puede modificar los detalles del evento.
-  - **Cancelar evento** (solo para **Host**): Un Host puede cancelar el evento si es necesario.
-  - **Ver eventos**: Todos los usuarios pueden ver una lista de eventos disponibles.
-  - **Unirse a evento**: Los usuarios pueden unirse o mostrar interés en un evento.
-  - **Ver detalles de evento**: Permite a los usuarios visualizar la información detallada de un evento específico.
-  ##### 3. Casos de Uso: Invitaciones y Publicaciones
-  ![Invitaciones y Publicaciones](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/invitations_posts_management_use_cases/invitations%20and%20posts%20management.svg)
-  #### Descripción:
-  - **Enviar invitación** (solo para **Host**): Un Host puede enviar invitaciones a usuarios para un evento específico.
-  - **Responder a invitación**: Los usuarios pueden aceptar, rechazar o indicar su interés en la invitación.
-  - **Ver invitaciones**: Los usuarios pueden ver todas sus invitaciones pendientes.
-  - **Crear publicación en evento**: Los usuarios pueden publicar comentarios o actualizaciones dentro de un evento.
-  - **Ver publicaciones de evento**: Todos los usuarios pueden ver las publicaciones relacionadas con el evento.
+##### 1. Casos de Uso: Gestión de Usuarios
+![Gestión de Usuarios](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/user_management_use_cases/user%20management.svg)
+
+**Descripción:**
+- **Registrar usuario**: Un usuario puede registrarse en la plataforma.
+- **Iniciar sesión**: Un usuario registrado puede iniciar sesión.
+- **Ver perfil**: Permite a los usuarios visualizar su perfil.
+- **Editar perfil**: Permite a los usuarios actualizar sus datos personales.
+- **Asignar rol a usuario** (solo para **Admin**): Un administrador puede asignar roles específicos (Admin, Host) a los usuarios.
+
+##### 2. Casos de Uso: Gestión de Eventos
+![Gestión de Eventos](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/event_management_user_cases/event%20management.svg)
+
+**Descripción:**
+- **Crear evento** (solo para **Host**): Permite a los usuarios con rol de Host crear un nuevo evento.
+- **Editar evento** (solo para **Host**): Un Host puede modificar los detalles del evento.
+- **Cancelar evento** (solo para **Host**): Un Host puede cancelar el evento si es necesario.
+- **Ver eventos**: Todos los usuarios pueden ver una lista de eventos disponibles.
+- **Unirse a evento**: Los usuarios pueden unirse o mostrar interés en un evento.
+- **Ver detalles de evento**: Permite a los usuarios visualizar la información detallada de un evento específico.
+
+##### 3. Casos de Uso: Invitaciones y Publicaciones
+![Invitaciones y Publicaciones](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/invitations_posts_management_use_cases/invitations%20and%20posts%20management.svg)
+
+**Descripción:**
+- **Enviar invitación** (solo para **Host**): Un Host puede enviar invitaciones a usuarios para un evento específico.
+- **Responder a invitación**: Los usuarios pueden aceptar, rechazar o indicar su interés en la invitación.
+- **Ver invitaciones**: Los usuarios pueden ver todas sus invitaciones pendientes.
+- **Crear publicación en evento**: Los usuarios pueden publicar comentarios o actualizaciones dentro de un evento.
+- **Ver publicaciones de evento**: Todos los usuarios pueden ver las publicaciones relacionadas con el evento.
+
 ---
 ### 13.3 Diagrama de Clases
 ![DER](https://github.com/EZE404/EventsTracker/blob/main/out/modeling/DER%20copy/event%20tracker.svg)
