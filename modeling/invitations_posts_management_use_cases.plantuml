@@ -1,17 +1,22 @@
 @startuml invitations and posts management
 left to right direction
+
 actor User
 actor Host
 Host -|> User
-usecase "Enviar invitación" as UC_SendInvitation
-usecase "Responder a invitación" as UC_RespondInvitation
-usecase "Ver invitaciones" as UC_ViewInvitations
-usecase "Crear publicación en evento" as UC_CreateEventPost
-usecase "Ver publicaciones de evento" as UC_ViewEventPosts
+
+package "EventsTracker" {
+    usecase "Enviar invitación" as UC_SendInvitation
+    usecase "Responder a invitación" as UC_RespondInvitation
+    usecase "Ver invitaciones" as UC_ViewInvitations
+    usecase "Crear publicación en evento" as UC_CreateEventPost
+    usecase "Ver publicaciones de evento" as UC_ViewEventPosts
+}
 
 Host --> UC_SendInvitation
 User --> UC_RespondInvitation
 User --> UC_ViewInvitations
 User --> UC_CreateEventPost
 User --> UC_ViewEventPosts
+
 @enduml

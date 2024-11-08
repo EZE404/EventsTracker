@@ -1,0 +1,50 @@
+@startuml unified_events_tracker
+left to right direction
+
+actor User
+actor Admin
+actor Host
+Admin -|> User
+Host -|> User
+
+package "EventsTracker" {
+    usecase "Registrar usuario" as UC_Register
+    usecase "Iniciar sesión" as UC_Login
+    usecase "Ver perfil" as UC_ViewProfile
+    usecase "Editar perfil" as UC_EditProfile
+    usecase "Asignar rol a usuario" as UC_AssignRole
+
+    usecase "Crear evento" as UC_CreateEvent
+    usecase "Editar evento" as UC_EditEvent
+    usecase "Cancelar evento" as UC_CancelEvent
+    usecase "Ver eventos" as UC_ViewEvents
+    usecase "Unirse a evento" as UC_JoinEvent
+    usecase "Ver detalles de evento" as UC_ViewEventDetails
+
+    usecase "Enviar invitación" as UC_SendInvitation
+    usecase "Responder a invitación" as UC_RespondInvitation
+    usecase "Ver invitaciones" as UC_ViewInvitations
+    usecase "Crear publicación en evento" as UC_CreateEventPost
+    usecase "Ver publicaciones de evento" as UC_ViewEventPosts
+}
+
+User --> UC_Register
+User --> UC_Login
+User --> UC_ViewProfile
+User --> UC_EditProfile
+Admin --> UC_AssignRole
+
+Host --> UC_CreateEvent
+Host --> UC_EditEvent
+Host --> UC_CancelEvent
+User --> UC_ViewEvents
+User --> UC_JoinEvent
+User --> UC_ViewEventDetails
+
+Host --> UC_SendInvitation
+User --> UC_RespondInvitation
+User --> UC_ViewInvitations
+User --> UC_CreateEventPost
+User --> UC_ViewEventPosts
+
+@enduml
